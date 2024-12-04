@@ -1,0 +1,57 @@
+.main_container {
+  width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem auto;
+  padding-bottom: 3rem;
+}
+
+.main_content,
+.banner {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main_content {
+  max-width: 420px;
+  gap: 1rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2c6ed5;
+  border-bottom: 2px solid #2c6ed5;
+}
+
+.banner > img {
+  max-width: 100%;
+}
+
+p > span,
+span {
+  color: #455a64;
+  font-weight: bold;
+}
+
+.advantages_section,
+.main_container > button {
+  margin: 1rem auto;
+  grid-column: 1 / -1;
+  justify-self: center;
+}
+
+.advantages_section {
+  max-width: 500px;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
