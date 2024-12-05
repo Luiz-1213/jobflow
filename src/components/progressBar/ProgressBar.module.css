@@ -1,0 +1,19 @@
+.progress_bar {
+  content: "";
+  width: 530px;
+  border-bottom: 5px solid #ccc;
+  position: absolute;
+  border-radius: 45px;
+  top: 15px;
+  z-index: 1;
+}
+
+.progress_bar_content {
+  max-width: 530px;
+  background-color: #0066cc;
+  height: 5px;
+  border-radius: 45px;
+  position: absolute;
+  z-index: 2;
+  transition: 0.3s linear ease-in-out;
+}

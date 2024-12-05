@@ -1,0 +1,39 @@
+.steps_container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 1.5rem;
+  gap: 1rem;
+}
+
+.steps {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.step_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  z-index: 3;
+}
+
+.step_content svg {
+  font-size: 1.5rem;
+  background-color: #fff;
+  padding: 0.5rem;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}
+
+.step_content.active > svg {
+  color: #1e90ff;
+}
+
+.step_content.active p {
+  color: #1e90ff;
+}

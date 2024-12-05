@@ -1,0 +1,48 @@
+/* Container Principal */
+.form_control {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  position: relative;
+}
+
+/* Estilops dos Inputs */
+.form_control input {
+  width: 300px;
+  height: 40px;
+  border-radius: 5px;
+  padding: 15px;
+  border: 1px solid #dfdfdf;
+  background: rgba(250, 250, 250, 0);
+  font-size: 0.9rem;
+}
+/* Logo de sucess ou warning */
+.form_control svg {
+  position: absolute;
+  right: 10px;
+  top: 44px;
+}
+/* Sucess icon */
+.form_control .sucess_icon {
+  color: #4caf50;
+}
+/* Error icon */
+.form_control .error_icon {
+  color: #f44336;
+}
+
+/* Input colors icon */
+input.sucess {
+  border: 1px solid #4caf50;
+}
+input.error {
+  border: 1px solid #f44336;
+}
+
+/* Label error */
+.label_error {
+  color: #f44336;
+  font-size: 0.8rem;
+}
