@@ -62,3 +62,8 @@ button {
 button:hover {
   background-color: #005bb5; /* Cor mais escura ao passar o mouse */
 }
+
+input:focus, select:focus, textarea:focus {
+  border-color: #62A9E0; 
+  outline: none;
+}
