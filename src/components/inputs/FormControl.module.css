@@ -2,30 +2,40 @@
 .form_control {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.2rem;
   margin-bottom: 1rem;
   text-align: left;
   position: relative;
 }
 
 /* Estilops dos Inputs */
-.form_control input {
+.form_control input,
+.form_control select {
+  max-width: 300px;
   width: 300px;
   height: 40px;
   border-radius: 5px;
-  padding: 15px;
   border: 1px solid #dfdfdf;
   background: rgba(250, 250, 250, 0);
   font-size: 0.9rem;
 }
+
+.form_control input {
+  padding: 15px;
+}
+
+.form_control select {
+  padding: 0 7px;
+}
+
 /* Logo de sucess ou warning */
 .form_control svg {
   position: absolute;
-  right: 10px;
-  top: 44px;
+  right: -25px;
+  top: 40px;
 }
 /* Sucess icon */
-.form_control .sucess_icon {
+.form_control .success_icon {
   color: #4caf50;
 }
 /* Error icon */
@@ -34,10 +44,12 @@
 }
 
 /* Input colors icon */
-input.sucess {
+input.success,
+select.success {
   border: 1px solid #4caf50;
 }
-input.error {
+input.error,
+select.error {
   border: 1px solid #f44336;
 }
 
