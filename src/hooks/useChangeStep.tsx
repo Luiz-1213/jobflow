@@ -1,6 +1,6 @@
 import { ReactElement, FormEvent, useState } from "react";
 
-export function useForm(steps: ReactElement[]) {
+export function useChangeStep(steps: ReactElement[]) {
   const [currentStep, setCurrentStep] = useState(0);
 
   function changeStep(i: number, e?: FormEvent) {
